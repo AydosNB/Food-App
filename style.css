@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply w-[90%] mx-auto max-w-[1400px]
+}
+
+.btn-solid {
+  @apply py-[5px] px-[15px] bg-green-700 text-white font-semibold rounded-sm hover:bg-green-600 active:scale-95 cursor-pointer
+}
+
+.meals-card {
+  @apply p-[10px] border-[1px] shadow-md relative top-[40px] border-gray-500 duration-300 rounded-md flex flex-col justify-between hover:bg-gray-900 opacity-0
+}
+
+.active {
+  @apply text-green-500
+}
+
+.active-basket {
+  @apply py-[7px] px-[15px] bg-transparent flex justify-center border-[1px] border-orange-400 items-center text-orange-400 font-bold rounded-md shadow-sm hover:bg-gray-800 hover:bg-opacity-35 active:scale-95
+}
+
+.active-card {
+  @apply opacity-100 top-0
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00271163;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #218400;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1a6e00;
+}

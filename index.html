@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="bg-[#171923] text-white">
+
+  <header class="border-b-[1px] shadow-md border-gray-500">
+    <div class="container h-[60px] flex justify-between items-center">
+      <div class="text-[20px] font-bold flex-1">
+        Meals
+      </div>
+      <div class="relative flex-[2]">
+        <form id="search-form">
+          <input id="search-input"
+            class="w-full py-[5px] px-[10px] border-[2px] rounded-sm bg-gray-700 border-gray-400 hover:border-green-300 focus:border-green-500 outline-none"
+            type="text" placeholder="Enter the meal name">
+          <div class="absolute top-0 right-0 bottom-0 p-[3px]">
+            <button class="btn-solid h-full">
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="flex-1">
+        <ul class="flex justify-end items-center gap-3 text-[16px] font-semibold">
+          <li id="link-product" class="hover:text-green-400 active:scale-95 cursor-pointer">
+            Products
+          </li>
+          <li id="link-basket" class="hover:text-green-400 active:scale-95 cursor-pointer relative">
+            Basket
+            <span id="basket-count" class="absolute top-[-8px] right-[-20px] w-[20px] h-[20px] rounded-full  text-orange-400 font-semibold text-[18px] flex justify-center items-center">0</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="min-h-[calc(100vh-64px)] max-h-[calc(100vh-64px)] overflow-y-auto">
+    <main id="content-wrapper" class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-2 container my-[20px]">
+
+    </main>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
